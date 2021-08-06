@@ -12,4 +12,4 @@ function handleClickNavbar() {
 }
 
 menuToggle.addEventListener("click", () => handleClickNavbar())
-document.querySelectorAll('.line').forEach(el => el.addEventListener('click', () => handleClickNavbar()))
+document.querySelectorAll('.line').forEach(el => el.addEventListener('click', () => !show && handleClickNavbar()))
