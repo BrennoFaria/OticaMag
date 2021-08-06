@@ -24,11 +24,11 @@ header{
     margin: 0 auto;
 }
 
-header ul {
+nav ul {
     margin: 40px;
 }
 
-header li{
+nav ul li{
     display: inline;
     font-size: 20px;
     padding: 10px;
@@ -37,12 +37,11 @@ header li{
     margin: 0 2vw;
 }
 
-header a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
-
-header a:hover{
+nav ul li a:hover{
     text-decoration: underline;
 }
 
@@ -223,8 +222,8 @@ footer{
 @media screen and (max-width: 1405px){
     nav{
         display: none;
-
     }
+
     .one,
     .two,
     .three {
@@ -232,7 +231,6 @@ footer{
         height: 5px;
         width: 100%;
         margin: 6px auto;
-
         transition-duration: 0.3s;
     }
     
@@ -244,7 +242,9 @@ footer{
         height: 30px;
         margin-right: 20px;
     }
+
 /* ---- Fullscreen ---- */
+    
     .menu-section.on{
         position: absolute;
         top: 0;
@@ -253,12 +253,9 @@ footer{
         height: 100vh;
         background-color: #5b5b5b;
         z-index: 10;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
-    .menu-section.on{
+    .menu-section.on nav{
         display: block;
     }
 
@@ -301,9 +298,8 @@ footer{
             margin: 20px;
         }
 
-        #socialmidia{
-            text-align: center;
-
+        #contacts a{
+            justify-content: center;
         }
     }
 }

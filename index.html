@@ -8,34 +8,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div id="container">
-            <section>
-                <header>
-                    <img src="imagens/Logo-Ótica.png" alt="">
-                    <div class="menu-section">
-                        <div class="menu-toggle">
-                            <div class="one"></div>
-                            <div class="two"></div>
-                            <div class="three"></div>
-                        </div>
+    <div id="container">
+        <section>
+            <header>
+                <img src="imagens/Logo-Ótica.png" alt="">
+                <div class="menu-section">
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Armações</a></li>
-                            <li><a href="">Sobre nós</a></li>
-                            <li><a href="">Contatos</a></li>
+                            <li><a class="line" href="#armacao">Armações</a></li>
+                            <li><a class="line" href="#sobre">Sobre nós</a></li>
+                            <li><a class="line" href="#contato">Contatos</a></li>
                         </ul>
                     </nav>
-                </header>
-            </section>
+                </div>
+            </header>
+        </section>
         <main>
             <div id="contents" >
                 <div class="photo">
                     <img src="imagens/Casal.jpg" alt="">
                 </div>
                 <fieldset> 
-                    <legend><p>&nbsp;Armações&nbsp;</p></legend>
+                    <legend id="armacao"><p>&nbsp;Armações&nbsp;</p></legend>
                 </fieldset>
                 <div id="grid-box">
                     <div id="box-1"  class="boxes" >
@@ -61,7 +60,7 @@
 
                 <div id="description">
                         <fieldset>
-                            <legend><p>&nbsp;Sobre Nós&nbsp;</p></legend>
+                            <legend id="sobre"><p>&nbsp;Sobre Nós&nbsp;</p></legend>
                         </fieldset>
                     <div id="textstyle">
                         <p>A Òtica mag foi fundada no ano de 2011 por Mônica Cristina Faria, no bairro Âlcantara em São Gonçalo, Mônica tinha muita experiencia como vendedora e trabalhou durante anos na Ótica do povo até decidir fundar sua propria empresa (ÓticaMag).
@@ -70,15 +69,13 @@
                                 o pricipal objetivo da ÓticaMag era chegar ao primeiro piso do predio onde ela residia em âlcantara e com muito esforço estava tudo indo bem.</p>
                     </div>
                 </div>
-
             </div>
-
         </main>
         <footer>
             <div id="baseboard">
                 <div id="contacts">
                     <fieldset>
-                        <legend><p id="title">&nbsp;Contatos&nbsp;</p></legend>
+                        <legend id="contato"><p id="title">&nbsp;Contatos&nbsp;</p></legend>
                     </fieldset>
                     <div id="socialmidia">
                         <a href=""><img src="imagens/icon-WhatsApp.png" alt=""> <span>(21) 91234-5678</span></a>
@@ -90,8 +87,7 @@
                 </div>
             </div>
         </footer>
+    </div>
     <script src="script.js"></script>
-
-</div>
 </body>
 </html>

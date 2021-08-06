@@ -1,11 +1,15 @@
 //---- resposive menu ----//
 let show = true;
 const menuSection = document.querySelector(".menu-section")
-const menuTuggle = menuSection.querySelector(".menu-toggle")
+const menuToggle = menuSection.querySelector(".menu-toggle")
+const sections = menuSection.querySelectorAll(".menu-toggle nav ul li") 
 
-menuTuggle.addEventListener("click", () =>{
-document.body.style.overflow = show ? "hidden" : "initial"
+function handleClickNavbar() {
+    document.body.style.overflow = show ? "hidden" : "initial"
 
     menuSection.classList.toggle("on", show)
     show = !show;
-})
+}
+
+menuToggle.addEventListener("click", () => handleClickNavbar())
+document.querySelectorAll('.line').forEach(el => el.addEventListener('click', () => handleClickNavbar()))
